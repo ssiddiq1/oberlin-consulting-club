@@ -5,7 +5,6 @@ from langchain_community.chat_message_histories.streamlit import (
     StreamlitChatMessageHistory,
 )
 from langchain_core.messages import HumanMessage, AIMessage
-from langchain_core.tracers.context import collect_runs
 from langsmith import Client
 from retrieval_graph.graph import graph
 import uuid

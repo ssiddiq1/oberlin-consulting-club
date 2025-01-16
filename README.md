@@ -31,3 +31,21 @@ Run the program
 ```shell
 uv run --env-file=.env streamlit run app.py
 ```
+
+## Development
+
+Install langgraph cli
+
+```shell
+uv tool install langgraph-cli[inmem]
+```
+
+Run langgraph development server
+
+```shell
+uvx langgraph dev
+```
+
+## Graph Diagram
+
+![graph](static/graph.jpg)
