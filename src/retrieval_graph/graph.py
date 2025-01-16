@@ -131,8 +131,10 @@ async def rephrase_question(state: GraphState) -> Command[Literal["retrieve"]]:
     trim_chat_history = get_chat_history(messages)
 
     if len(human_messages_list) >= 2:
-        output = await condense_chain.ainvoke({"messages": trim_chat_history})
-        rephrased_question = output.question
+        output = await condense_chain.ainvoke(
+            {"question": question, "chat_history": trim_chat_history}
+        )
+        rephrased_question = output.content
 
         return Command(
             update={"rephrased_question": rephrased_question}, goto="retrieve"
