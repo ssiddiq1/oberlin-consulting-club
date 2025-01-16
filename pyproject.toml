@@ -5,7 +5,7 @@ description = "Starter template for making a custom retrieval graph in LangGraph
 authors = [{ name = "Shayaan", email = "ssiddiq1@oberlin.edu" }]
 license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.10.0"
+requires-python = ">=3.10.0,<3.13"
 dependencies = [
     "langgraph>=0.2.6",
     "langchain-openai>=0.1.22",
