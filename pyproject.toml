@@ -5,7 +5,7 @@ description = "Starter template for making a custom retrieval graph in LangGraph
 authors = [{ name = "Shayaan", email = "ssiddiq1@oberlin.edu" }]
 license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.9.0"
 dependencies = [
     "langgraph>=0.2.6",
     "langchain-openai>=0.1.22",
@@ -55,7 +55,4 @@ lint.ignore = [
 convention = "google"
 
 [dependency-groups]
-dev = [
-    "langgraph-cli[inmem]>=0.1.67",
-    "ruff>=0.9.1",
-]
+dev = ["langgraph-cli[inmem]>=0.1.67", "ruff>=0.9.1"]
