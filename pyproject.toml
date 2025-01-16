@@ -17,7 +17,6 @@ dependencies = [
     "pydantic>=2.10.5",
     "typing-extensions>=4.12.2",
     "langchain-core>=0.2.43",
-    "langgraph-cli[inmem]>=0.1.67",
     "langchain-community>=0.2.19",
     "watchdog>=6.0.0",
 ]
@@ -56,4 +55,7 @@ lint.ignore = [
 convention = "google"
 
 [dependency-groups]
-dev = ["ruff>=0.9.1"]
+dev = [
+    "langgraph-cli[inmem]>=0.1.67",
+    "ruff>=0.9.1",
+]
