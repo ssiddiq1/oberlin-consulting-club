@@ -28,6 +28,9 @@ and individual component documentation within the retrieval_graph package.
 """  # noqa
 
 from retrieval_graph.graph import graph
+from dotenv import load_dotenv, find_dotenv
+
+load_dotenv(find_dotenv())
 
 
 __all__ = ["graph"]
